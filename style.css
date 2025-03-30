@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #DA70D6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.frase{
+    margin-top: 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    padding: 0;
+    margin: 0; 
+    gap: 50px;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #fdfdfd; /* Cor do texto ao passar o mouse */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#carouselExampleIndicators{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #da70d625;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #da70d67c;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Cada item de produto */
+.produto-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom */
+.imagem-container {
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.produto-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.produto-item:hover img {
+    transform: scale(1.1);
+}
+
+.produto-item p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.produto-item strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.formularios-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.formularios-container, h2{
+    margin-bottom: 20px;
+}
+
+#cadastro, #agendamento {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 500px;
+    overflow-y: auto;
+}
+
+input[type="submit"] {
+    background-color: #DA70D6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #c45ea4;
+}
+
+footer {
+    background-color: #DA70D6;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
