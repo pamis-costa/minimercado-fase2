@@ -113,6 +113,11 @@ main {
     color: #333;
 }
 
+.formularios-container p{
+    font-size: 10px;
+    font-style: italic;
+}
+
 .formularios-container {
     display: flex;
     justify-content: space-between;
@@ -130,7 +135,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    height: 500px;
+    height: 900px;
     overflow-y: auto;
 }
 
